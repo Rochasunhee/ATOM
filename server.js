@@ -27,13 +27,13 @@ app.get('/',function(req,res){
 });
 
 app.get('/topic',function(req,res){
-  res.send('Topic page')
+  res.send('Github')
 });
 
 app.get('/dynamic',function(req,res){
   var sp='';//빈문자열
-  for (var i=0;i<10;i++){ System.out.print(i + ", ");
-    //sp=sp+`<h1><h1><br>`
+  for (var i=0;i<10;i++){
+    sp=sp`'${i}경고'`
   }
 
 res.send(sp);
